@@ -100,7 +100,7 @@ body {
 footer {
   padding: 30px;
   text-align: center;
-  background: rgba(0, 0, 0, 0); /* transparan penuh */
+  background: rgba(0, 0, 0, 0.1); /* transparan penuh */
   color: white;
 }
 
