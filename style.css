@@ -169,8 +169,7 @@ section p {
 }
 
 .photo-wrapper {
-  background-color: #E6002A;
-  width: 100%;
+  background-color: rgba(230, 0, 42, 0.5); /* ⬅️ 0.5 = 50% transparan */  width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 20px;
   overflow: hidden;
