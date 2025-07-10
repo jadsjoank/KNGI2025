@@ -6,7 +6,6 @@
   <title>PGRI SUMMIT 2025 – Undangan Resmi</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    /* Background full screen */
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -29,8 +28,8 @@
       color: white;
       padding: 60px 20px;
       text-align: center;
-      background: rgba(0, 0, 0, 0.5); /* Overlay gelap di header */
-      backdrop-filter: blur(5px); /* Tambahan blur */
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
     }
 
     header h1 {
@@ -43,14 +42,22 @@
       color: #FFFFFF;
     }
 
-    section {
-      padding: 50px 20px;
+    .container {
       max-width: 800px;
-      margin: 30px auto;
-      background: rgba(255, 255, 255, 0.75); /* Putih 75% transparan */
-      backdrop-filter: blur(8px); /* Efek blur belakang konten */
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(8px);
       border-radius: 12px;
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+      padding: 40px 30px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
     }
 
     section h2 {
@@ -78,7 +85,7 @@
       text-align: center;
       padding: 30px 20px;
       margin-top: 40px;
-      backdrop-filter: blur(5px); /* Blur juga untuk footer */
+      backdrop-filter: blur(5px);
     }
   </style>
 </head>
@@ -90,28 +97,31 @@
     <p>10-12 November 2025 | Jakarta Convention Center</p>
   </header>
 
-  <section>
-    <h2>Tentang Acara</h2>
-    <p>
-      PGRI SUMMIT adalah perayaan kolaborasi dan dedikasi insan pendidikan di seluruh Indonesia.
-      Diinisiasi bersama PGRI, acara ini bertujuan untuk memperkuat komitmen guru dalam mewujudkan Indonesia Emas.
-    </p>
-  </section>
+  <!-- 🔽 Semua section dimasukkan dalam 1 container -->
+  <div class="container">
+    <section>
+      <h2>Tentang Acara</h2>
+      <p>
+        PGRI SUMMIT adalah perayaan kolaborasi dan dedikasi insan pendidikan di seluruh Indonesia.
+        Diinisiasi bersama PGRI, acara ini bertujuan untuk memperkuat komitmen guru dalam mewujudkan Indonesia Emas.
+      </p>
+    </section>
 
-  <section>
-    <h2>Waktu & Lokasi</h2>
-    <p><strong>Tanggal:</strong> Senin-Rabu, 10-12 November 2025</p>
-    <p><strong>Waktu:</strong> 08.00 – 16.00 WIB</p>
-    <p><strong>Tempat:</strong> Jakarta Convention Center, Senayan</p>
-  </section>
+    <section>
+      <h2>Waktu & Lokasi</h2>
+      <p><strong>Tanggal:</strong> Senin-Rabu, 10-12 November 2025</p>
+      <p><strong>Waktu:</strong> 08.00 – 16.00 WIB</p>
+      <p><strong>Tempat:</strong> Jakarta Convention Center, Senayan</p>
+    </section>
 
-  <section>
-    <h2>Ticketing</h2>
-    <p>
-      Pastikan Anda hadir dan menjadi bagian dari perubahan besar!
-    </p>
-    <a href="https://www.loket.com/event/pertamina-grand-prix-of-indonesia-2025_fFDc" class="btn">BELI TIKET</a>
-  </section>
+    <section>
+      <h2>Ticketing</h2>
+      <p>
+        Pastikan Anda hadir dan menjadi bagian dari perubahan besar!
+      </p>
+      <a href="https://www.loket.com/event/pertamina-grand-prix-of-indonesia-2025_fFDc" class="btn">BELI TIKET</a>
+    </section>
+  </div>
 
   <footer>
     &copy; 2025 RGP | All rights reserved.
