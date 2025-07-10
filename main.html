@@ -43,39 +43,41 @@
     }
 
     #countdown {
-      margin-top: 30px;
+      margin-top: 20px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 15px;
-      animation: fadeIn 2s ease;
+      gap: 10px;
     }
 
     .count-box {
-      background: rgba(255, 255, 255, 0.15);
-      border: 2px solid rgba(255, 255, 255, 0.3);
-      border-radius: 10px;
-      padding: 15px 20px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      padding: 8px 14px;
       text-align: center;
-      backdrop-filter: blur(5px);
-      min-width: 70px;
+      min-width: 60px;
+      font-weight: 500;
+      font-size: 0.9em;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .count-box .number {
-      font-size: 1.8em;
-      font-weight: 700;
+      font-size: 1.3em;
+      font-weight: 600;
       color: #ffdd57;
+      margin-bottom: 2px;
     }
 
     .count-box .label {
-      font-size: 0.8em;
-      color: #eee;
+      font-size: 0.7em;
+      color: #ddd;
     }
 
     @media (max-width: 480px) {
       h1 { font-size: 2rem; }
-      .count-box { padding: 10px 15px; min-width: 60px; }
-      .count-box .number { font-size: 1.5em; }
+      .count-box { padding: 6px 10px; min-width: 50px; }
+      .count-box .number { font-size: 1.1em; }
     }
 
     .container {
@@ -131,24 +133,25 @@
     <h1>PGRI SUMMIT 2025</h1>
     <p>“Guru Bermutu, Indonesia Maju”</p>
     <p>10-12 November 2025 | Jakarta Convention Center</p>
-<p>| Countdown |</p>
+    
     <div id="countdown">
-        <div class="count-box">
-          <span class="number" id="days">0</span>
-          <span class="label">Hari</span>
-        </div>
-        <div class="count-box">
-          <span class="number" id="hours">0</span>
-          <span class="label">Jam</span>
-        </div>
-        <div class="count-box">
-          <span class="number" id="minutes">0</span>
-          <span class="label">Menit</span>
-        </div>
-        <div class="count-box">
-          <span class="number" id="seconds">0</span>
-          <span class="label">Detik</span>
-        </div>
+      <div class="count-box">
+        <span class="number" id="days">0</span>
+        <span class="label">Hari</span>
+      </div>
+      <div class="count-box">
+        <span class="number" id="hours">0</span>
+        <span class="label">Jam</span>
+      </div>
+      <div class="count-box">
+        <span class="number" id="minutes">0</span>
+        <span class="label">Menit</span>
+      </div>
+      <div class="count-box">
+        <span class="number" id="seconds">0</span>
+        <span class="label">Detik</span>
+      </div>
+    </div>
   </header>
 
   <div class="container">
@@ -185,7 +188,6 @@
     Your browser does not support the audio element.
   </audio>
 
-  <!-- Countdown Script -->
   <script>
     const targetDate = new Date("2025-11-10T08:00:00+07:00").getTime();
 
