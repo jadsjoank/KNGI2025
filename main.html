@@ -43,10 +43,39 @@
     }
 
     #countdown {
-      margin-top: 15px;
-      font-weight: 600;
-      font-size: 1.1em;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      animation: fadeIn 2s ease;
+    }
+
+    .count-box {
+      background: rgba(255, 255, 255, 0.15);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      padding: 15px 20px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+      min-width: 70px;
+    }
+
+    .count-box .number {
+      font-size: 1.8em;
+      font-weight: 700;
       color: #ffdd57;
+    }
+
+    .count-box .label {
+      font-size: 0.8em;
+      color: #eee;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 2rem; }
+      .count-box { padding: 10px 15px; min-width: 60px; }
+      .count-box .number { font-size: 1.5em; }
     }
 
     .container {
@@ -102,7 +131,23 @@
     <h1>PGRI SUMMIT 2025</h1>
     <p>“Guru Bermutu, Indonesia Maju”</p>
     <p>10-12 November 2025 | Jakarta Convention Center</p>
-    <p id="countdown"></p>
+    <div id="countdown">
+        <div class="count-box">
+          <span class="number" id="days">0</span>
+          <span class="label">Hari | </span>
+        </div>
+        <div class="count-box">
+          <span class="number" id="hours">0</span>
+          <span class="label">Jam | </span>
+        </div>
+        <div class="count-box">
+          <span class="number" id="minutes">0</span>
+          <span class="label">Menit | </span>
+        </div>
+        <div class="count-box">
+          <span class="number" id="seconds">0</span>
+          <span class="label">Detik</span>
+        </div>
   </header>
 
   <div class="container">
@@ -142,24 +187,25 @@
   <!-- Countdown Script -->
   <script>
     const targetDate = new Date("2025-11-10T08:00:00+07:00").getTime();
-    const countdownEl = document.getElementById("countdown");
 
-    const updateCountdown = setInterval(function () {
+    const updateCountdown = setInterval(() => {
       const now = new Date().getTime();
       const distance = targetDate - now;
-
-      if (distance < 0) {
-        clearInterval(updateCountdown);
-        countdownEl.innerHTML = "Acara sedang berlangsung!";
-        return;
-      }
 
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      countdownEl.innerHTML = `Hitung Mundur: ${days} hari ${hours} jam ${minutes} menit ${seconds} detik`;
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+
+      if (distance < 0) {
+        clearInterval(updateCountdown);
+        document.getElementById("countdown").innerHTML = "<p>Acara sedang berlangsung!</p>";
+      }
     }, 1000);
   </script>
 
