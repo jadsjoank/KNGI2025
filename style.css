@@ -20,7 +20,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('https://drive.google.com/file/d/1rUe85uLFJe5izkeXa87P_EMFELwDFFuW/view?usp=sharing') no-repeat center center/cover;
+  background: url('assets/BACKGROUND-01.png') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
