@@ -4,161 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PGRI SUMMIT 2025 – Undangan Resmi</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      color: #333;
-      position: relative;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('assets/cover.png') no-repeat center center/cover;
-      z-index: -1;
-      opacity: 1;
-    }
-
-    header {
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-   
-    }
-
-    header h1 {
-      margin-bottom: 10px;
-      font-size: 2.5em;
-    }
-
-    header p {
-      font-size: 1.2em;
-      color: #FFFFFF;
-    }
-
-    #countdown {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .count-box {
-      background: rgba(255, 255, 255, 0.12);
-      border-radius: 50px;
-      padding: 8px 14px;
-      text-align: center;
-      min-width: 60px;
-      font-weight: 500;
-      font-size: 0.9em;
-      backdrop-filter: blur(4px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .count-box .number {
-      font-size: 1.3em;
-      font-weight: 600;
-      color: #57F1FF;
-      margin-bottom: 2px;
-    }
-
-    .count-box .label {
-      font-size: 0.7em;
-      color: #FFFFFF;
-    }
-
-    @media (max-width: 480px) {
-      h1 { font-size: 2rem; }
-      .count-box { padding: 6px 10px; min-width: 50px; }
-      .count-box .number { font-size: 1.1em; }
-    }
-
-    .container {
-  max-width: 800px;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.40);
-  backdrop-filter: blur(8px);
-  border-radius: 20px;
-  padding: 30px 30px;
-  text-align: center; /* ⬅️ Tambahan penting untuk center semua teks */
-}
-
-
-    section {
-      margin-bottom: 0;
-    }
-
-    section:last-child {
-      margin-bottom: 0;
-    }
-
-    section h2 {
-      color: #131111;
-      text-align: center;
-      margin-bottom: 8px;
-    }
-    section p {
-      color: #131111;
-      text-align: center;
-      }
-    .btn {
-      display: inline-block;
-      background: #E6002A;
-      color: white;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 50px;
-      margin-top: 8px;
-    }
-
-    .btn:hover {
-      background: #E60000;
-    }
-
-      footer {
-      background: rgba(0, 0, 0, 0.5);
-      color: #fff;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 40px;
-      backdrop-filter: blur(5px);
-    }
-  </style>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
     <h1>PGRI SUMMIT 2025</h1>
     <p>“Guru Bermutu, Indonesia Maju”</p>
     <p>10-12 November 2025 | Jakarta Convention Center</p>
-    
+
     <div id="countdown">
-      <div class="count-box">
-        <span class="number" id="days">0</span>
-        <span class="label">Hari</span>
-      </div>
-      <div class="count-box">
-        <span class="number" id="hours">0</span>
-        <span class="label">Jam</span>
-      </div>
-      <div class="count-box">
-        <span class="number" id="minutes">0</span>
-        <span class="label">Menit</span>
-      </div>
-      <div class="count-box">
-        <span class="number" id="seconds">0</span>
-        <span class="label">Detik</span>
-      </div>
+      <div class="count-box"><span class="number" id="days">0</span><span class="label">Hari</span></div>
+      <div class="count-box"><span class="number" id="hours">0</span><span class="label">Jam</span></div>
+      <div class="count-box"><span class="number" id="minutes">0</span><span class="label">Menit</span></div>
+      <div class="count-box"><span class="number" id="seconds">0</span><span class="label">Detik</span></div>
     </div>
   </header>
 
+  <!-- CONTAINER -->
   <div class="container">
+
+    <!-- TENTANG ACARA -->
     <section>
       <h2>Tentang Acara</h2>
       <p>
@@ -167,6 +35,7 @@
       </p>
     </section>
 
+    <!-- WAKTU & LOKASI -->
     <section>
       <h2>Waktu & Lokasi</h2>
       <p><strong>Tanggal:</strong> Senin-Rabu, 10-12 November 2025</p>
@@ -174,88 +43,100 @@
       <p><strong>Tempat:</strong> Jakarta Convention Center, Senayan</p>
     </section>
 
+    <!-- PEMBICARA UTAMA -->
     <section>
-  <h2>Pembicara Utama</h2>
-  <div class="team-grid">
-    <div class="team-member">
-      <div class="photo-wrapper">
-        <img src="assets/narsum1.png" alt="Dr. Rina Kartika">
+      <h2>Pembicara Utama</h2>
+      <div class="team-grid">
+        <!-- Ulangi blok ini untuk tiap pembicara -->
+        <div class="team-member">
+          <div class="photo-wrapper">
+            <img src="assets/narsum1.png" alt="Dr. Rina Kartika">
+          </div>
+          <h4>Dr. Rina Kartika</h4>
+          <p>Ketua Umum PGRI</p>
+        </div>
+        <div class="team-member">
+          <div class="photo-wrapper">
+            <img src="assets/narsum1.png" alt="Prof. Budi Santosa">
+          </div>
+          <h4>Prof. Budi Santosa</h4>
+          <p>Rektor UNJ</p>
+        </div>
+        <div class="team-member">
+          <div class="photo-wrapper">
+            <img src="assets/narsum1.png" alt="Lia Marlina, M.Pd">
+          </div>
+          <h4>Lia Marlina, M.Pd</h4>
+          <p>Penggiat Literasi</p>
+        </div>
+        <div class="team-member">
+          <div class="photo-wrapper">
+            <img src="assets/narsum1.png" alt="Dr. Hasan Basri">
+          </div>
+          <h4>Dr. Hasan Basri</h4>
+          <p>Ketua Bidang Pendidikan</p>
+        </div>
+        <div class="team-member">
+          <div class="photo-wrapper">
+            <img src="assets/narsum1.png" alt="Yuliana Rahma, M.Ed">
+          </div>
+          <h4>Yuliana Rahma, M.Ed</h4>
+          <p>Trainer Nasional</p>
+        </div>
+        <div class="team-member">
+          <div class="photo-wrapper">
+            <img src="assets/narsum1.png" alt="Ahmad Fauzan, Ph.D">
+          </div>
+          <h4>Ahmad Fauzan, Ph.D</h4>
+          <p>Peneliti Pendidikan</p>
+        </div>
       </div>
-      <h4>Dr. Rina Kartika</h4>
-      <p>Ketua Umum PGRI</p>
-    </div>
-    <div class="team-member">
-      <div class="photo-wrapper">
-        <img src="assets/narsum1.png" alt="Prof. Budi Santosa">
-      </div>
-      <h4>Prof. Budi Santosa</h4>
-      <p>Rektor UNJ</p>
-    </div>
-    <div class="team-member">
-      <div class="photo-wrapper">
-        <img src="assets/narsum1.png" alt="Lia Marlina, M.Pd">
-      </div>
-      <h4>Lia Marlina, M.Pd</h4>
-      <p>Penggiat Literasi</p>
-    </div>
-    <div class="team-member">
-      <div class="photo-wrapper">
-        <img src="assets/narsum1.png" alt="Dr. Hasan Basri">
-      </div>
-      <h4>Dr. Hasan Basri</h4>
-      <p>Ketua Bidang Pendidikan</p>
-    </div>
-    <div class="team-member">
-      <div class="photo-wrapper">
-        <img src="assets/narsum1.png" alt="Yuliana Rahma, M.Ed">
-      </div>
-      <h4>Yuliana Rahma, M.Ed</h4>
-      <p>Trainer Nasional</p>
-    </div>
-    <div class="team-member">
-      <div class="photo-wrapper">
-        <img src="assets/narsum1.png" alt="Ahmad Fauzan, Ph.D">
-      </div>
-      <h4>Ahmad Fauzan, Ph.D</h4>
-      <p>Peneliti Pendidikan</p>
-    </div>
-  </div>
-</section>
-
-    <section>
-      <h2>Kegiatan</h2>
-      <p>Lomba Guru | Expo Pendidikan Indonesia | Konser Kebangsaan | International Teacher Summit | Seminar Pendidikan | Jalan Sehat | Fun Bike | Festival Zumba Dance</p>
     </section>
 
+    <!-- KEGIATAN -->
+    <section>
+      <h2>Kegiatan</h2>
+      <p>
+        Lomba Guru | Expo Pendidikan Indonesia | Konser Kebangsaan |
+        International Teacher Summit | Seminar Pendidikan | Jalan Sehat |
+        Fun Bike | Festival Zumba Dance
+      </p>
+    </section>
+
+    <!-- TIKET -->
     <section>
       <h2>Tiket</h2>
       <p>
         Pastikan Anda hadir dan menjadi bagian dari perubahan besar!
-        (exm:loket.com)
       </p>
       <a href="https://www.loket.com/event/pertamina-grand-prix-of-indonesia-2025_fFDc" class="btn">BELI TIKET</a>
     </section>
+
+    <!-- KONTAK -->
     <section>
       <h2>Hubungi Kami</h2>
       <p>
-        Untuk informasi dan konfirmasi lebih lanjut terkait acara, kemitraan, tiket, dan lainnya silahkan hubungi kami 
+        Untuk informasi dan konfirmasi lebih lanjut terkait acara, kemitraan, tiket, dan lainnya silakan hubungi kami
       </p>
       <a href="https://wa.me/62811668491" class="btn">Narahubung</a>
     </section>
+
   </div>
-  </div>
+
+  <!-- FOOTER -->
   <footer>
     &copy; 2025 RGP | All rights reserved.
   </footer>
 
+  <!-- AUDIO -->
   <audio autoplay loop hidden>
     <source src="assets/bgmusic.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+    Browser Anda tidak mendukung elemen audio.
   </audio>
 
+  <!-- SCRIPT COUNTDOWN -->
   <script>
     const targetDate = new Date("2025-11-10T08:00:00+07:00").getTime();
-
     const updateCountdown = setInterval(() => {
       const now = new Date().getTime();
       const distance = targetDate - now;
@@ -276,6 +157,5 @@
       }
     }, 1000);
   </script>
-
 </body>
 </html>
