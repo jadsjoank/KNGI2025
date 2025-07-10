@@ -97,7 +97,7 @@ body {
 footer {
   padding: 30px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5); /* hitam transparan 50% */
-  color: black;
+  background: transparent;
+  color: white; /* atau warna lain sesuai kontras background gambar */
 }
 
