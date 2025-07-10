@@ -101,8 +101,6 @@ body {
 footer {
   padding: 30px;
   text-align: center;
-  background: transparent; /* Atau rgba(0,0,0,0) */
-  color: white;
 }
 
 
