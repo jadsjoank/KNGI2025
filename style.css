@@ -175,16 +175,16 @@ section p {
   border-radius: 20px;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: flex-end; /* Nempel ke bawah */
   justify-content: center;
-  margin: 0 auto;
 }
 
 .photo-wrapper img {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: auto;
   object-fit: contain;
 }
+
 
 /* Nama & Jabatan */
 .team-member h4 {
