@@ -12,9 +12,10 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: transparent; /* Ubah dari #fff */
   color: #333;
 }
+
 
 /* HERO SECTION */
 .hero {
@@ -100,7 +101,7 @@ body {
 footer {
   padding: 30px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.1); /* transparan penuh */
+  background: rgba(0, 0, 0, 0); /* transparan penuh */
   color: white;
 }
 
