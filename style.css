@@ -20,7 +20,7 @@ body
 }
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 30px;
   margin-top: 20px;
   justify-items: center;
@@ -30,12 +30,12 @@ body
   width: 100%;
   max-width: 180px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .photo-wrapper {
   background-color: #E6002A;
   width: 100%;
-  max-width: 160px;
   aspect-ratio: 1 / 1;
   border-radius: 20px;
   overflow: hidden;
@@ -64,19 +64,17 @@ body
   margin: 0;
 }
 
-/* RESPONSIF */
+/* RESPONSIVE LAYOUT */
 @media (max-width: 1024px) {
   .team-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (max-width: 768px) {
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 480px) {
   .team-grid {
     grid-template-columns: 1fr;
@@ -86,7 +84,6 @@ body
     max-width: 200px;
   }
 }
-
 
 /* HERO SECTION */
 .hero {
