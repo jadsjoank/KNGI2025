@@ -81,7 +81,7 @@ body {
 footer {
   padding: 30px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.9); /* hitam transparan 50% */
+  background: rgba(0, 0, 0, 0); /* hitam transparan 50% */
   color: white;
 }
 
