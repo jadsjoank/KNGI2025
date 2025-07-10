@@ -65,6 +65,57 @@ body {
 .btn:hover {
   background: #e65c00;
 }
+/* GAUSSIAN BLUR EFFECT */
+.blur-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.blur-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('assets/bg01.png') no-repeat center center/cover;
+  filter: blur(10px);
+  z-index: 0;
+}
+
+.blur-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.blur-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.blur-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #ff6b00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e65c00;
+}
 
 /* SECTION */
 .section {
