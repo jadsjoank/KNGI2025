@@ -67,13 +67,13 @@ body {
 }
 
 .btn:hover {
-  background: #E60060;
+  background: #E6002A;
 }
 
 .btn {
   display: inline-block;
   padding: 12px 30px;
-  background: #ff6b00;
+  background: #E6006B;
   color: white;
   border: none;
   border-radius: 5px;
@@ -83,7 +83,7 @@ body {
 }
 
 .btn:hover {
-  background: #e65c00;
+  background: #E6002A;
 }
 
 /* SECTION */
