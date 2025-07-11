@@ -13,21 +13,36 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #333;
   line-height: 1.6;
+  background: url('assets/cover.png') no-repeat center center / cover fixed;
   background-color: #fff;
   position: relative;
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.08); /* bisa juga rgba(0,0,0,0.1) */
+  backdrop-filter: blur(8px); /* ✨ Dramatis! */
+  z-index: -1;
+  pointer-events: none;
+}
+
 .container {
-  background: white; /* warna latar belakang container */
+  position: relative;
+  z-index: 2;
+  background: white;
   padding: 60px 30px;
   max-width: 860px;
   margin: 40px auto;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08); /* bayangan halus */
-  border-radius: 20px; /* sudut membulat */
-  position: relative;
-  text-align: center; /* semua isi center */
-  z-index: 2;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border-radius: 20px;
+  text-align: center;
 }
+
 
 section {
   margin-bottom: 40px;
