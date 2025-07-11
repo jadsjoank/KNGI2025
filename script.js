@@ -1,5 +1,6 @@
-// Countdown Timer
+// ========== Countdown Timer ==========
 const targetDate = new Date("2025-11-10T08:00:00+07:00").getTime();
+
 setInterval(() => {
   const now = new Date().getTime();
   const distance = targetDate - now;
@@ -13,24 +14,15 @@ setInterval(() => {
   document.getElementById("hours").innerText = hours;
   document.getElementById("minutes").innerText = minutes;
   document.getElementById("seconds").innerText = seconds;
+
+  if (distance < 0) {
+    document.getElementById("countdown").innerHTML = "<p>Acara sedang berlangsung!</p>";
+  }
 }, 1000);
 
-// Fade-in scroll observer
-const faders = document.querySelectorAll('.fade-in-up');
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1 }
-);
-faders.forEach(fade => observer.observe(fade));
-
- // Optional: Reveal sections saat scroll
+// ========== Fade-in Scroll Observer ==========
+document.addEventListener("DOMContentLoaded", () => {
   const faders = document.querySelectorAll('.fade-in-up');
-  const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
 
   const appearOnScroll = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -38,9 +30,12 @@ faders.forEach(fade => observer.observe(fade));
       entry.target.classList.add("visible");
       observer.unobserve(entry.target);
     });
-  }, appearOptions);
+  }, {
+    threshold: 0.2,
+    rootMargin: "0px 0px -50px 0px"
+  });
 
   faders.forEach(fader => {
     appearOnScroll.observe(fader);
   });
-
+});
