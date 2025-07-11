@@ -209,7 +209,7 @@ section p {
   width: 100%;
   height: auto;
   object-fit: contain;
-  filter: grayscale (100%);
+  filter: grayscale(100%);
   transition: filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
