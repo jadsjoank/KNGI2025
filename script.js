@@ -1,6 +1,5 @@
-// ========== Countdown Timer ==========
+// Countdown Timer
 const targetDate = new Date("2025-11-10T08:00:00+07:00").getTime();
-
 setInterval(() => {
   const now = new Date().getTime();
   const distance = targetDate - now;
@@ -14,28 +13,20 @@ setInterval(() => {
   document.getElementById("hours").innerText = hours;
   document.getElementById("minutes").innerText = minutes;
   document.getElementById("seconds").innerText = seconds;
-
-  if (distance < 0) {
-    document.getElementById("countdown").innerHTML = "<p>Acara sedang berlangsung!</p>";
-  }
 }, 1000);
 
-// ========== Fade-in Scroll Observer ==========
-document.addEventListener("DOMContentLoaded", () => {
-  const faders = document.querySelectorAll('.fade-in-up');
+// Fade-in scroll effect
+const faders = document.querySelectorAll('.fade-in-up');
+const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
 
-  const appearOnScroll = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    });
-  }, {
-    threshold: 0.2,
-    rootMargin: "0px 0px -50px 0px"
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add("visible");
+    observer.unobserve(entry.target);
   });
+}, appearOptions);
 
-  faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-  });
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
 });
