@@ -17,13 +17,13 @@ body {
 }
 
 .container {
-  background: white;          /* 🧼 Biar jelas muncul di bawah hero */
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: -100px auto 0 auto; /* 🪄 Tarik sedikit ke atas agar nyambung dari hero */
+  background: white;
+  padding: 60px 30px;
+  max-width: 860px;
+  margin: 40px auto; /* ✅ Ubah dari margin negatif */
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   border-radius: 20px;
-  z-index: 5;
+  z-index: 1;
   position: relative;
 }
 
