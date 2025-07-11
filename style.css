@@ -114,7 +114,7 @@ header {
 .container {
   max-width: 900px;
   margin: auto;
-  background: rgba(255, 255, 255, 0.70);
+  background: rgba(255, 255, 255, 0.80);
   backdrop-filter: blur(5px);
   border-radius: 20px;
   padding: 40px 30px;
@@ -209,7 +209,7 @@ section p {
   width: 100%;
   height: auto;
   object-fit: contain;
-  filter: linear-gradient(135deg, #0e45ff, #FF416C);
+  filter: grayscale (100%);
   transition: filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
