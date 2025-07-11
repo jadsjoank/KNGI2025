@@ -139,6 +139,7 @@ section p {
 /* TOMBOL CTA */
 .btn {
   display: inline-block;
+  margin-top: 10px;
   padding: 14px 36px;
   background: linear-gradient(135deg, #E6002A, #FF416C);
   color: #fff;
