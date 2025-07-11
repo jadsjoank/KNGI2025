@@ -17,19 +17,19 @@ body {
   position: relative; /* ✅ Penting untuk lapisan z-index */
 }
 
-
 body::before {
   content: "";
   position: fixed;
-  top: 0; left: 0;
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100%;
   background: url('assets/cover.png') no-repeat center center / cover;
   z-index: -1;
-  opacity: 0.15; /* biar gak ganggu konten depan */
+  opacity: 0.15;
   filter: blur(2px);
+  background-attachment: fixed; /* ✅ Biar parallax dan full scroll */
 }
-
 
 .container {
   background: white; /* warna latar belakang container */
