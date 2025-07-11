@@ -255,7 +255,7 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .hero h1 {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 
   .team-grid {
