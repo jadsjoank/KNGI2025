@@ -109,7 +109,7 @@ body::before {
 .container {
   max-width: 900px;
   margin: auto;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.70);
   backdrop-filter: blur(8px);
   border-radius: 20px;
   padding: 40px 30px;
@@ -169,7 +169,7 @@ section p {
 }
 
 .photo-wrapper {
-  background-color: rgba(230, 0, 42, 0.5); /* ⬅️ 0.5 = 50% transparan */  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* ⬅️ 0.5 = 50% transparan */  width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 20px;
   overflow: hidden;
