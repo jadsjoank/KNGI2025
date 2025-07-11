@@ -60,8 +60,12 @@ body::before {
 }
 
 .hero h1 {
+ .hero h1 {
   font-size: 5rem;
+  line-height: 1.1; /* ✅ Leading lebih rapat */
   margin-bottom: 10px;
+}
+
 }
 
 .hero p {
