@@ -17,11 +17,16 @@ body {
 }
 
 .container {
-  max-width: 800px;
-  margin: auto;
+  background: white;          /* 🧼 Biar jelas muncul di bawah hero */
   padding: 40px 20px;
-  text-align: center;
+  max-width: 800px;
+  margin: -100px auto 0 auto; /* 🪄 Tarik sedikit ke atas agar nyambung dari hero */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border-radius: 20px;
+  z-index: 5;
+  position: relative;
 }
+
 
 /* HERO SECTION */
 .hero {
