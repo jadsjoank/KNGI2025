@@ -252,6 +252,7 @@ footer {
 
 .fade-in-up {
   opacity: 0;
+  transition-delay: 0.2s;
   transform: translateY(30px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
