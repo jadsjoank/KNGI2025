@@ -13,8 +13,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #333;
   line-height: 1.6;
-  background: url('assets/cover.png') no-repeat center center / cover fixed;
   background-color: #fff;
+  position: relative;
 }
 
 .container {
@@ -41,6 +41,7 @@ section:last-child {
 .hero {
   position: relative;
   height: 100vh;
+  background: url('assets/cover.png') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +50,6 @@ section:last-child {
   overflow: hidden;
   padding: 0 20px;
 }
-
 
 .hero .overlay {
   position: absolute;
