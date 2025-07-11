@@ -271,6 +271,14 @@ footer {
   .container {
     padding: 25px 20px;
   }
+
+  @media (max-width: 480px) {
+  .btn {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+}
+
   /* --- TRANSISI DINAMIS --- */
 
 .fade-in-up {
