@@ -60,7 +60,6 @@ body::before {
 }
 
 .hero h1 {
- .hero h1 {
   font-size: 5rem;
   line-height: 1.1; /* ✅ Leading lebih rapat */
   margin-bottom: 10px;
@@ -259,7 +258,8 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .hero h1 {
-    font-size: 5rem;
+      line-height: 1.1; /* ✅ Leading lebih rapat */
+font-size: 5rem;
   }
 
   .team-grid {
@@ -269,7 +269,8 @@ footer {
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 5rem;
+  line-height: 1.1; /* ✅ Leading lebih rapat */
+   font-size: 5rem;
   }
 
   .team-grid {
@@ -279,7 +280,8 @@ footer {
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 3rem;
+      line-height: 1.1; /* ✅ Leading lebih rapat */
+font-size: 3rem;
   }
 
   .team-grid {
