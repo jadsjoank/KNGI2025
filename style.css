@@ -109,7 +109,7 @@ body::before {
 .container {
   max-width: 900px;
   margin: auto;
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(8px);
   border-radius: 20px;
   padding: 40px 30px;
