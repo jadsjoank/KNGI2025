@@ -9,7 +9,6 @@
 </head>
 <body>
 
-<!-- HERO SECTION -->
 <header class="hero">
   <div class="overlay"></div>
   <div class="content">
@@ -17,7 +16,7 @@
     <p>“Guru Bermutu, Indonesia Maju”</p>
     <p>10–12 November 2025 | Jakarta Convention Center</p>
 
-    <div id="countdown" class="fade-in-up">
+    <div id="countdown">
       <div class="count-box"><span class="number" id="days">0</span><span class="label">Hari</span></div>
       <div class="count-box"><span class="number" id="hours">0</span><span class="label">Jam</span></div>
       <div class="count-box"><span class="number" id="minutes">0</span><span class="label">Menit</span></div>
@@ -26,9 +25,7 @@
   </div>
 </header>
 
-<!-- MAIN CONTENT -->
-<main class="container">
-  <!-- Semua section diberi animasi -->
+<div class="container">
   <section class="fade-in-up">
     <h2>Tentang Acara</h2>
     <p>PGRI SUMMIT adalah perayaan kolaborasi dan dedikasi insan pendidikan seluruh Indonesia.</p>
@@ -45,7 +42,6 @@
   <section class="fade-in-up">
     <h2>Narasumber</h2>
     <div class="team-grid">
-      <!-- Satu contoh -->
       <div class="team-member">
         <div class="photo-wrapper filter-classy">
           <img src="assets/unifa.png" alt="Prof. Dr. Unifah Rosyidi, M.Pd." />
@@ -53,7 +49,6 @@
         <h4>Prof. Dr. Unifah Rosyidi, M.Pd.</h4>
         <p>Ketua Umum PB PGRI</p>
       </div>
-      <!-- Tambahan narasumber lain tinggal duplikasi blok di atas -->
     </div>
   </section>
 
@@ -73,19 +68,33 @@
     <p>Untuk info lebih lanjut silakan hubungi kami:</p>
     <a href="https://wa.me/62811668491" class="btn">Narahubung</a>
   </section>
-</main>
+</div>
 
-<!-- FOOTER -->
 <footer>
   &copy; 2025 RGP | All rights reserved.
 </footer>
 
-<!-- AUDIO BACKGROUND -->
 <audio autoplay loop hidden>
   <source src="assets/bgmusic.mp3" type="audio/mpeg" />
 </audio>
 
-<!-- SCRIPT -->
 <script src="script.js"></script>
+<script>
+  // Optional: Reveal sections saat scroll
+  const faders = document.querySelectorAll('.fade-in-up');
+  const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
 </body>
 </html>
