@@ -86,7 +86,7 @@ body::before {
 .count-box {
   background: rgba(255, 255, 255, 0.12);
   border-radius: 10px;
-  padding: 5px 8px;
+  padding: 3px 8px;
   text-align: center;
   min-width: 60px;
   backdrop-filter: blur(5px);
