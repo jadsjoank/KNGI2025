@@ -111,7 +111,8 @@ header {
 .container {
   max-width: 900px;
   margin: auto;
-  background: white; /* solid */
+  background: rgba(255, 255, 255, 0.60);
+  backdrop-filter: blur(5px);
   border-radius: 20px;
   padding: 40px 30px;
   text-align: center;
