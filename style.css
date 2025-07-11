@@ -25,13 +25,17 @@ body {
 
 /* HERO SECTION */
 .hero {
+  position: relative;
   height: 100vh;
   background: url('assets/cover.png') no-repeat center center/cover;
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
-  color: white;
+  justify-content: center;
+  flex-direction: column; /* Center */
+  text-align: center;
+  overflow: hidden;
+}
+
 }
 
 .hero .overlay {
