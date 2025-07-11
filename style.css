@@ -258,8 +258,8 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .hero h1 {
-      line-height: 1.1; /* ✅ Leading lebih rapat */
-font-size: 5rem;
+      font-size: 5rem;
+      line-height: 1.1;
   }
 
   .team-grid {
@@ -269,8 +269,8 @@ font-size: 5rem;
 
 @media (max-width: 768px) {
   .hero h1 {
-  line-height: 1.1; /* ✅ Leading lebih rapat */
-   font-size: 5rem;
+      font-size: 5rem;
+      line-height: 1.1;
   }
 
   .team-grid {
@@ -280,8 +280,8 @@ font-size: 5rem;
 
 @media (max-width: 480px) {
   .hero h1 {
-      line-height: 1.1; /* ✅ Leading lebih rapat */
-font-size: 3rem;
+     font-size: 5rem;
+     line-height: 1.1;
   }
 
   .team-grid {
