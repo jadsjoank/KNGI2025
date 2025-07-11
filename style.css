@@ -13,24 +13,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #333;
   line-height: 1.6;
-  background: transparent;
-  min-height: 100%;
-  position: relative;
+  background: url('assets/cover.png') no-repeat center center / cover fixed;
+  background-color: #fff;
 }
-
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
-  background: url('assets/cover.png') no-repeat center center / cover;
-  z-index: -1;
-  opacity: 0.15;
-  filter: blur(2px);
-}
-
 
 .container {
   background: white; /* warna latar belakang container */
