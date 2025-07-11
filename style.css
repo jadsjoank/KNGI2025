@@ -14,7 +14,8 @@ body {
   color: #333;
   line-height: 1.6;
   background: transparent;
-  position: relative; /* ✅ Penting untuk lapisan z-index */
+  min-height: 100%;
+  position: relative;
 }
 
 body::before {
