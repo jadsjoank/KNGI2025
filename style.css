@@ -26,7 +26,7 @@ body::before {
   height: 100%;
   background: url('assets/cover.png') no-repeat center center / cover;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.2; /* atau yang kamu suka */
 }
 
 /* HERO SECTION (index.html) */
@@ -108,8 +108,7 @@ header {
 .container {
   max-width: 900px;
   margin: auto;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(8px);
+  background: white;
   border-radius: 20px;
   padding: 40px 30px;
   text-align: center;
