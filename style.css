@@ -80,12 +80,12 @@ body::before {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
 
 .count-box {
   background: rgba(255, 255, 255, 0.12);
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 10px 16px;
   text-align: center;
   min-width: 60px;
