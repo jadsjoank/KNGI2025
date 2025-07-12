@@ -45,7 +45,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 10px;
 }
 
@@ -129,7 +129,7 @@ section:last-child {
 section h2 {
   margin-bottom: 10px;
   color: #131111;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 section p {
