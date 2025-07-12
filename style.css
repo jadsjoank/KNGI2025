@@ -113,14 +113,12 @@ header {
 /* CONTAINER & SECTION */
 .container {
   max-width: none;
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px 30px;
+  margin: auto;
   background: rgba(255, 255, 255, 0.80);
   backdrop-filter: blur(5px);
   border-radius: 20px;
+  padding: 40px 30px;
   text-align: center;
-  box-sizing: border-box; /* penting! */
 }
 
 section {
@@ -281,8 +279,6 @@ footer {
 
   .container {
     padding: 25px 20px;
-    width: 100%;
-    box-sizing: border-box;
   }
 
   .btn {
