@@ -217,7 +217,7 @@ section p {
   filter: grayscale(60%) contrast(1.1) brightness(1.05);
 
 /* FOOTER */
-footer {
+.footer {
  background: transparent;
   color: white;
   text-align: center;
