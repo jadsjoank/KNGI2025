@@ -222,13 +222,12 @@ section p {
 
 /* FOOTER */
 footer {
-  background: transparent;
-  color: white;
+  background: none;
   text-align: center;
   padding: 30px 20px;
   margin-top: 40px;
-  backdrop-filter: blur(5px);
   font-size: 0.9rem;
+  color: #fff;
 }
 
 /* TRANSISI */
