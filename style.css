@@ -61,7 +61,7 @@ body::before {
 
 .hero h1 {
   font-size: 5rem;
-  line-height: 1.5; /* ✅ Leading lebih rapat */
+  line-height: 1; /* ✅ Leading lebih rapat */
   margin-bottom: 10px;
 }
 
@@ -259,7 +259,7 @@ footer {
 @media (max-width: 1024px) {
   .hero h1 {
       font-size: 5rem;
-      line-height: 1.5;
+      line-height: 1;
   }
 
   .team-grid {
@@ -270,7 +270,7 @@ footer {
 @media (max-width: 768px) {
   .hero h1 {
       font-size: 5rem;
-      line-height: 1.5;
+      line-height: 1;
   }
 
   .team-grid {
@@ -281,7 +281,7 @@ footer {
 @media (max-width: 480px) {
   .hero h1 {
      font-size: 5rem;
-     line-height: 1.5;
+     line-height: 1;
   }
 
   .team-grid {
