@@ -112,7 +112,7 @@ header {
 
 /* CONTAINER & SECTION */
 .container {
-  max-width: 100px;
+  max-width: 800px;
   margin: auto;
   background: rgba(255, 255, 255, 0.80);
   backdrop-filter: blur(5px);
