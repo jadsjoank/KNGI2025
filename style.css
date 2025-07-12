@@ -217,9 +217,9 @@ section p {
   filter: grayscale(60%) contrast(1.1) brightness(1.05);
 
 /* FOOTER */
-.footer {
- background: transparent;
-  color: white;
+footer {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
   text-align: center;
   padding: 30px 20px;
   margin-top: 30px;
