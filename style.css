@@ -145,7 +145,7 @@ section p {
 .btn {
   display: inline-block;
   margin-top: 10px;
-  padding: 14px 36px;
+  padding: 10px 24px;
   background: linear-gradient(135deg, #0e45ff, #FF416C);
   color: #fff;
   text-decoration: none;
