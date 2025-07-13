@@ -250,7 +250,8 @@ footer {
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 1024px) {
   .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 1;
   }
   .team-grid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -259,7 +260,9 @@ footer {
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 5rem;
+    line-height: 1;
+
   }
   .team-grid {
      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -268,7 +271,8 @@ footer {
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 2rem;
+    font-size: 5rem;
+    line-height: 1;
   }
   .team-grid {
      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
