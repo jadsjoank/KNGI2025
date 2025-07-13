@@ -128,8 +128,10 @@ section:last-child {
 
 section h2 {
   margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   color: #131111;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 section p {
