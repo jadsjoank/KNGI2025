@@ -150,9 +150,10 @@ section p {
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 3px;
+  text-transform: uppercase;
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
@@ -224,12 +225,12 @@ section p {
 .team-member h4 {
   margin-top: 10px;
   margin-bottom: 4px;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 700;
 }
 
 .team-member p {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
   color: #444;
   margin: 0;
 }
