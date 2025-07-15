@@ -85,39 +85,6 @@ body {
   display: block;
   object-fit: contain;
 }
-  /* ===================================== */
-/* Logo Support */
-.partners {
-  background: transparent !important;
-  position: relative;
-  z-index: 2;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.partner-logos {
-  background: none !important;
-  gap: 32px;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.partner-logos img {
-  height: 36px;
-  opacity: 0.85;
-  transition: transform 0.3s ease;
-}
-
-.partner-logos img:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-section.partners, .partner-logos, .partner-logos img {
-  background: transparent !important;
-}
-
 
 /* ===================================== */
 /* HEADER (untuk main.html) */
