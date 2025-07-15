@@ -16,6 +16,12 @@ body {
   color: #333;
 }
 
+.spacer {
+  height: 20px;
+}
+
+
+
 /* ===================================== */
 /* HERO SECTION (untuk index.html) */
 .hero {
