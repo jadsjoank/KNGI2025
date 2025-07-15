@@ -114,6 +114,9 @@ body {
   transform: scale(1.1);
   opacity: 1;
 }
+section.partners, .partner-logos, .partner-logos img {
+  background: transparent !important;
+}
 
 
 /* ===================================== */
