@@ -262,51 +262,41 @@ section p {
 
   /* ===================================== */
 /* Logo Support */
+.partners {
+  margin-top: 60px;
+  text-align: center;
+}
+
 .partner-label {
   font-size: 0.75rem;
   letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 500;
+  color: #fff;
   margin-bottom: 20px;
-  color: #ffffffcc;
-}
-  
-}
-.partners {
-  padding: 40px 20px;
-  text-align: center;
-  backdrop-filter: blur(6px);
-  background-color: rgba(255, 255, 255, 0.05);
-  color: white;
-}
-
-.partners h2 {
-  font-size: 1rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  font-weight: 600;
 }
 
 .partner-logos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 20px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  opacity: 0.9;
 }
 
 .partner-logos img {
-  max-width: 100px;
-  height: auto;
-  opacity: 0.9;
+  height: 40px;
+  max-width: 120px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Putihkan logo */
   transition: transform 0.3s ease;
 }
 
 .partner-logos img:hover {
   transform: scale(1.05);
-  opacity: 1;
 }
+
 /* ===================================== */
 /* FOOTER */
 footer {
