@@ -262,6 +262,15 @@ section p {
 
   /* ===================================== */
 /* Logo Support */
+.partner-label {
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #ffffffcc;
+}
+  
 }
 .partners {
   padding: 40px 20px;
