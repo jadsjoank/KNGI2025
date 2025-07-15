@@ -58,9 +58,9 @@ body {
 /* LOGO */
 
 .logo-wrapper {
-  max-width: 150px;
+  max-width: 200px;
   width: 80%;
-  margin: 0 auto 30px;
+  margin: 0 auto 60px;
 }
 
 .logo {
