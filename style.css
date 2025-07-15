@@ -88,27 +88,20 @@ body {
   /* ===================================== */
 /* Logo Support */
 .partners {
+  background: transparent !important;
+  position: relative;
+  z-index: 2;
   padding: 40px 20px;
   text-align: center;
-  background: transparent;
-}
-
-.partner-label {
-  font-size: 0.75rem;
-  letter-spacing: 3px;
-  color: white;
-  margin-bottom: 20px;
-  font-weight: 600;
 }
 
 .partner-logos {
+  background: none !important;
+  gap: 32px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  max-width: 600px;
-  margin: auto;
 }
 
 .partner-logos img {
@@ -121,6 +114,7 @@ body {
   transform: scale(1.1);
   opacity: 1;
 }
+
 
 /* ===================================== */
 /* HEADER (untuk main.html) */
