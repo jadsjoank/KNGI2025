@@ -85,7 +85,45 @@ body {
   display: block;
   object-fit: contain;
 }
+.partners {
+  padding: 40px 20px;
+  text-align: center;
+  background: transparent; /* penting: tidak ada warna blok */
+  color: white;
+  position: relative;
+  z-index: 2;
+  margin-top: -40px; /* opsional untuk geser lebih dekat ke hero */
+}
 
+.partner-label {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.partner-grid img {
+  height: 36px;
+  opacity: 0.85;
+  transition: transform 0.3s ease;
+  background: transparent; /* pastikan tidak ada latar belakang putih */
+}
+
+.partner-grid img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
 /* ===================================== */
 /* HEADER (untuk main.html) */
 header {
