@@ -55,6 +55,21 @@ body {
 
 }
 
+/* LOGO */
+
+.logo-wrapper {
+  max-width: 300px;
+  width: 80%;
+  margin: 0 auto 16px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
 /* ===================================== */
 /* HEADER (untuk main.html) */
 header {
