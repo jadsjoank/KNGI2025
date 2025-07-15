@@ -263,38 +263,38 @@ section p {
   /* ===================================== */
 /* Logo Support */
 .partners {
-  margin-top: 60px;
+  padding: 40px 20px;
   text-align: center;
+  background: transparent;
 }
 
 .partner-label {
   font-size: 0.75rem;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #fff;
+  letter-spacing: 3px;
+  color: white;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .partner-logos {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 40px;
-  opacity: 0.9;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: auto;
 }
 
 .partner-logos img {
-  height: 40px;
-  max-width: 120px;
-  object-fit: contain;
-  filter: brightness(0) invert(1); /* Putihkan logo */
+  height: 36px;
+  opacity: 0.85;
   transition: transform 0.3s ease;
 }
 
 .partner-logos img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 /* ===================================== */
