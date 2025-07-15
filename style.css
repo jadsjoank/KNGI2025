@@ -1,4 +1,4 @@
-/* style.css */
+/* RESET DASAR */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,14 @@ body {
   color: #333;
 }
 
-/* HERO SECTION */
+.spacer {
+  height: 20px;
+}
+
+
+
+/* ===================================== */
+/* HERO SECTION (untuk index.html) */
 .hero {
   position: relative;
   height: 100vh;
@@ -26,28 +33,26 @@ body {
   justify-content: center;
   text-align: center;
   color: white;
-  flex-direction: column;
 }
 
 .hero video {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -2;
 }
-
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(-45deg, rgba(251,0,91,0.75), rgba(0,71,251,0.75));
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(-45deg, rgba(251,0,91,0.75), rgba(0,71,251,0.75)); 
   z-index: -1;
+}
+.hero .overlay {
+  display: none; /* tidak dibutuhkan karena diganti oleh ::before */
 }
 
 .hero .content {
@@ -55,6 +60,18 @@ body {
   z-index: 1;
   padding: 20px;
 }
+
+.hero h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+/* LOGO */
 
 .logo-wrapper {
   max-width: 200px;
@@ -68,13 +85,132 @@ body {
   display: block;
   object-fit: contain;
 }
+.partners {
+  padding: 40px 20px;
+  text-align: center;
+  background: transparent; /* penting: tidak ada warna blok */
+  color: white;
+  position: relative;
+  z-index: 2;
+  margin-top: -40px; /* opsional untuk geser lebih dekat ke hero */
+}
 
-.hero p {
-  font-size: 1.2rem;
-  line-height: 1.3;
+.partner-label {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.partner-grid img {
+  height: 36px;
+  opacity: 0.85;
+  transition: transform 0.3s ease;
+  background: transparent; /* pastikan tidak ada latar belakang putih */
+}
+
+.partner-grid img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+/* ===================================== */
+/* HEADER (untuk main.html) */
+header {
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  background: transparent;
+}
+.main-page::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('assets/coverindex.png') no-repeat center center/cover;
+  z-index: -1;
+  opacity: 1;
+}
+
+
+/* Countdown Timer */
+#countdown {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.count-box {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 3px 8px;
+  text-align: center;
+  min-width: 60px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.count-box .number {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #57F1FF;
+}
+
+.count-box .label {
+  font-size: 0.75em;
   color: white;
 }
 
+/* ===================================== */
+/* CONTAINER & SECTION */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #131111;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+section p {
+  color: #131111;
+  font-size: 1rem;
+}
+
+/* ===================================== */
+/* TOMBOL CTA */
 .btn {
   display: inline-block;
   margin-top: 10px;
@@ -115,41 +251,122 @@ body {
   box-shadow: 0 10px 20px rgba(230, 0, 42, 0.4);
 }
 
-/* PARTNERS */
-.partners {
-  padding: 60px 20px;
-  text-align: center;
-  background: transparent;
-}
-
-.partner-label {
-  font-size: 0.75rem;
-  letter-spacing: 3px;
-  color: white;
-  margin-bottom: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.partner-logos {
+/* ===================================== */
+/* TIM PEMBICARA / SPEAKER */
+.team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 30px;
-  align-items: center;
+  margin-top: 20px;
   justify-items: center;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
-.partner-logos img {
-  max-height: 40px;
-  width: auto;
-  opacity: 0.9;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
+.team-member {
+  max-width: 180px;
+  text-align: center;
 }
 
-.partner-logos img:hover {
-  transform: scale(1.1);
+.photo-wrapper {
+  background-color:  rgba(255, 255, 255, 0.25);
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end; /* Foto nempel ke bawah */
+  justify-content: center;
+}
+
+.photo-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.photo-wrapper img:hover {
+  filter: none;
+  box-shadow: 0 0 12px rgba(230, 0, 42, 0.3);
+}
+
+/* Nama & Jabatan */
+.team-member h4 {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.team-member p {
+  font-size: 0.75rem;
+  color: #444;
+  margin: 0;
+}
+
+
+/* ===================================== */
+/* FOOTER */
+footer {
+  background: transparent;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* ===================================== */
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 5rem;
+    line-height: 1;
+
+  }
+  .team-grid {
+     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 5rem;
+    line-height: 1;
+  }
+  .team-grid {
+     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  .container {
+    padding: 25px 20px;
+  }
+
+  .btn {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+  
+  /* --- TRANSISI DINAMIS --- */
+.fade-in-up {
+  opacity: 0;
+  transition-delay: 0.2s;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.visible {
   opacity: 1;
+  transform: translateY(0);
 }
+}
+
