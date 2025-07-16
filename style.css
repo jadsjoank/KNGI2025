@@ -93,12 +93,12 @@ body {
 }
 
 .partner-label {
-  font-size: 0.20rem;     /* dikecilin */
+  font-size: 0.05rem;     /* dikecilin */
   letter-spacing: 1.5px;
   color: white;
   margin-bottom: 10px;
-  font-weight: 500;
-  opacity: 0.8;
+  font-weight: 300;
+  opacity: none;
 }
 
 .partner-logos {
