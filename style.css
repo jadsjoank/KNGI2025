@@ -93,7 +93,7 @@ body {
 }
 
 .partner-label {
-  font-size: 0.65rem;     /* dikecilin */
+  font-size: 0.20rem;     /* dikecilin */
   letter-spacing: 1.5px;
   color: white;
   margin-bottom: 10px;
@@ -103,7 +103,7 @@ body {
 
 .partner-logos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));  /* lebih kecil */
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));  /* lebih kecil */
   gap: 10px;
   align-items: center;
   justify-content: center;
